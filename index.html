@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Test page</title>
+	<script type="text/javascript" src = learne.js></script>
+  <script type="text/javascript" src = responsiveNavIcon.js></script>
+  <script type="text/javascript" src = toTopBtn.js></script>
+  <script type="text/javascript" src = fullPageTabs.js defer></script>
+  <!--[if lt IE 9]> <script src="//html5shiv.googlecode.com/ svn/trunk/html5.js"></script> <![endif]-->
+</head>
+<body>
+  
+<header>
+  <picture>
+    <source media="(min-width: 980px)" srcset="images/logo_1.png" alt="logo_image" width='289' height='118'>
+    <source media="(min-width: 550px)" srcset="images/logo_2.png" alt="logo_image" width='460' height='66'>
+    <img src="images/logo_3.png" alt="logo_image" style="width: auto;">
+  </picture>
+
+  <a href="javascript:void(0);" class='responsiveMenuIcon' onclick="responsiveNavIcon()"><img src="images/burger1.png" alt="BurgerMenuIcon" ></a>
+  
+  <nav>
+    <ul class="mainNav" id="myNav">
+      <li><a href="#" class="tab_link" onclick="openPage('home')" id="defaultOpen">Главная</a></li>
+      <li><a href="#" class="tab_link" onclick="openPage('portfolio')" >Портфолио</a></li>
+      <li><a href="#" class="tab_link" onclick="openPage('price')" >Прайс</a></li>
+      <li><a href="#" class="tab_link" onclick="openPage('contacts')" >Контакты</a></li>
+    </ul>
+  </nav>
+</header> 
+
+<div id='home' class="tab_content">
+  <main>
+
+    <h1>Студия маникюра nogotOK</h1>
+  
+    <figure>
+      <img  src="images/kodi_header.png" alt="Main image" width="528" height="250">
+      <figcaption>Подчеркни свою индивидуальность вместе с нами.</figcaption>
+    </figure>
+
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet velit auctor, 
+       sagittis ante eget, ultricies leo. In in commodo nibh. In fringilla, sapien in consectetur auctor, nisi odio dignissim elit, sed fermentum ante mi quis ante. Sed augue purus, condimentum tincidunt mi a, vulputate ullamcorper odio. Donec dapibus volutpat nunc ut egestas. efficitur lorem sit amet tempus. Nunc vulputate et nulla ut condimentum. Curabitur  sodales  erat ac risus luctus sagittis ac sed libero. 
+   </p>
+
+
+   <h2>Мы используем только оригинальные материали TM KODI</h2>
+
+   <figure>
+     <img  src="images/kodi_9.png" alt="Main image" width="364" height="364">
+     <figcaption>Разнообразие цвевот и оттенков впечатляет.</figcaption>
+   </figure>
+
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet velit auctor, 
+        sagittis ante eget, ultricies leo. In in commodo nibh. In fringilla, sapien in consectetur auctor, nisi odio dignissim elit, sed fermentum ante mi quis ante. Sed augue purus, condimentum tincidunt mi a, vulputate ullamcorper odio. Donec dapibus volutpat nunc ut egestas. efficitur lorem sit amet tempus. Nunc vulputate et nulla ut condimentum. Curabitur  sodales  erat ac risus luctus sagittis ac sed libero. 
+   </p>
+
+   <h2>Профессиональная стерилизация инструмента</h2>
+
+   <figure>
+     <img  src="images/stirilization.png" alt="Main image" width="714" height="300">
+     <figcaption>Стерилизация проходит в шесть этапов.</figcaption>
+   </figure>
+  
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet velit auctor, 
+        sagittis ante eget, ultricies leo. In in commodo nibh. In fringilla, sapien in consectetur auctor, nisi odio dignissim elit, sed fermentum ante mi quis ante. Sed augue purus, condimentum tincidunt mi a, vulputate ullamcorper odio. Donec dapibus volutpat nunc ut egestas. efficitur lorem sit amet tempus. Nunc vulputate et nulla ut condimentum. Curabitur  sodales  erat ac risus luctus sagittis ac sed libero. 
+   </p>
+  </main>
+</div>
+
+
+
+
+<div id="portfolio" class="tab_content">
+  <main>
+    <h2>Немного примеров наших работ</h2>
+    <div class="row">
+      <div class="column">
+        <img src="images/nails_1.jpg">
+        <img src="images/nails_2.jpg">
+        <img src="images/nails_3.jpg">
+        <img src="images/nails_4.jpg">
+        <img src="images/nails_5.jpg">
+        <img src="images/nails_6.jpg">
+        <img src="images/nails_7.jpg">
+        <img src="images/nails_8.jpg">
+        <img src="images/nails_9.jpg">
+        <img src="images/nails_10.jpg">
+      </div>
+      <div class="column">
+        <img src="images/nails_2.jpg">
+        <img src="images/nails_4.jpg">
+        <img src="images/nails_6.jpg">
+        <img src="images/nails_8.jpg">
+        <img src="images/nails_10.jpg">
+        <img src="images/nails_1.jpg">
+        <img src="images/nails_3.jpg">
+        <img src="images/nails_5.jpg">
+        <img src="images/nails_7.jpg">
+        <img src="images/nails_9.jpg">
+      </div>
+      <div class="column">
+        <img src="images/nails_1.jpg">
+        <img src="images/nails_3.jpg">
+        <img src="images/nails_5.jpg">
+        <img src="images/nails_7.jpg">
+        <img src="images/nails_9.jpg">
+        <img src="images/nails_2.jpg">
+        <img src="images/nails_4.jpg">
+        <img src="images/nails_6.jpg">
+        <img src="images/nails_8.jpg">
+        <img src="images/nails_10.jpg">
+      </div>
+      <div class="column">
+        <img src="images/nails_10.jpg">
+        <img src="images/nails_9.jpg">
+        <img src="images/nails_8.jpg">
+        <img src="images/nails_6.jpg">
+        <img src="images/nails_7.jpg">
+        <img src="images/nails_5.jpg">
+        <img src="images/nails_4.jpg">
+        <img src="images/nails_3.jpg">
+        <img src="images/nails_2.jpg">
+        <img src="images/nails_1.jpg">
+      </div>
+    </div>
+  </main>
+</div>
+
+
+<div id="price" class="tab_content" >
+  <main>
+    <h2>Прайс лист</h2>
+   <table>
+    <tr>
+    <th class="item">Услуга</th>
+    <th class="cost">Цена(грн)</th>
+    </tr>
+  <tr>
+    <td class="item">item 1</td>
+    <td class="cost">cost 1</td>
+  </tr>
+  <tr>
+    <td class="item">item 2</td>
+    <td class="cost">cost 2</td>
+  </tr>
+  <tr>
+    <td class="item">item 3</td>
+    <td class="cost">cost 3</td>
+  </tr>
+  <tr>
+    <td class="item">item 4</td>
+    <td class="cost">cost 4</td>
+  </tr>
+  <tr>
+    <td class="item">item 5</td>
+    <td class="cost">cost 5</td>
+  </tr>
+  <tr>
+    <td class="item">item 6</td>
+    <td class="cost">cost 6</td>
+  </tr>
+  <tr>
+    <td class="item">item 7</td>
+    <td class="cost">cost 7</td>
+  </tr>
+  <tr>
+    <td class="item">item 8</td>
+    <td class="cost">cost 8</td>
+  </tr>
+  
+   </table>
+  </main>
+</div>
+
+
+
+
+<div id="contacts" class="tab_content">
+  <main>
+      <h2>Наши контакты</h2>
+        <div class="contacts">
+          <p>пгт. Гостомель ул. Ярослава Мудрого 2-а</p>
+          <p>Предварительная запись 097-014-96-60</p> 
+          <p>Пн-Сб с 9-00 до 20-00</p>
+        </div>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1033.4327192192961!2d30.228809358913434!3d50.57788999176071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472b2e29525dfcf5%3A0xba9a1d119847b367!2z0LLRg9C70LjRhtGPINCv0YDQvtGB0LvQsNCy0LAg0JzRg9C00YDQvtCz0L4sIDEsINCT0L7RgdGC0L7QvNC10LvRjCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LsuLCAwODI4OQ!5e1!3m2!1sru!2sua!4v1548172725049" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    
+ </main>
+</div>
+
+
+
+
+
+  <picture onclick="topFunction()" id="myBtn" title="Go to top">
+    <source media="(min-width: 980px)" srcset="images/topArrow_128.png" alt="Arrow button" width='128' height='128'>
+    <source media="(min-width: 550px)" srcset="images/topArrow_64.png" alt="Arrow button" width='64' height='64'>
+    <img src="images/topArrow_32.png" alt="Arrow button" style="width: auto;">
+  </picture>
+ 
+
+                          
+                           
+<footer>
+  <div class="social">
+        <p>Мы в социальных сетях:</p>
+        
+        <a href="https://www.facebook.com/profile.php?id=100017356957424" target="_blank">
+          <img src="images/fb_logo.png" alt="Мы в Facebook"></a>
+        <a href="https://www.facebook.com/profile.php?id=100017356957424" target="_blank">
+          <img src="images/insta_logo.png" alt="Мы в Facebook"></a>
+        <a href="https://www.facebook.com/profile.php?id=100017356957424" target="_blank">
+          <img src="images/twit_logo.png" alt="Мы в Facebook"></a>
+        
+        <p>&copy; 2019 by <a href="#" target="_blanc">Wasiliy Boyko</a></p>
+      </div>
+  
+</footer>
+
+
+
+
+
+
+</body>
+</html>

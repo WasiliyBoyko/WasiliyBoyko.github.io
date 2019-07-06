@@ -1,0 +1,583 @@
+@font-face {
+  font-family: 'PTSans';
+  src: url('fonts/PTSansRegular.woff2') format('woff2'),
+       url('fonts/PTSansRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PTSans';
+  src: url('fonts/PTSansItalic.woff2') format('woff2'),
+       url('fonts/PTSansItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'PTSans';
+  src: url('fonts/PTSansBold.woff2') format('woff2'),
+       url('fonts/PTSansBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PTSans';
+  src: url('fonts/PTSansBoldItalic.woff2') format('woff2'),
+       url('fonts/PTSansBoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+} 
+/* сброс стилей браузера */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol { 
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+
+*{
+  box-sizing: border-box;
+}
+/* конец кода сброса стилей браузера */
+
+
+
+
+html {
+  /*height: 100%;*/
+    height: 100vh;           /*Стили*/
+    display: flex;           /*Помогают реализовать*/
+    flex-direction: column;  /*липкий футер*/
+}
+
+body{
+	/*height: 100%;*/
+    font-family: PTSans, Arial,Verdana,Helvetica, sans-serif;
+    font-size: 62.5%;
+ 
+}
+
+
+
+
+header{
+	background-image: linear-gradient(to top, rgba(255, 216, 203, .9), rgba(255, 216, 203, .2));
+	background-color: rgb(255,131,225);
+	border-bottom: 1px solid grey;	 
+}
+
+picture{
+	margin-left: 25px;
+}
+
+
+.responsiveMenuIcon img{
+	display: none;
+}
+
+.responsiveMenuIcon{
+	outline: none;
+}
+
+
+nav {
+float: right;
+width: 75%;
+margin-top: 75px;	
+}
+
+.mainNav {
+  font: 1.2em Verdana, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+}
+
+.mainNav li{
+	/*display: block; 
+	cursor: pointer; */
+	float: left;
+	margin: 0 25px;
+	text-align: center;
+    width: 175px;
+}
+
+.mainNav a {
+  color: #000;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border: 1px solid (255, 216, 203, 1);
+  border-radius: 5px 25px 5px 25px;
+  padding: 10px 45px;
+  display: block;
+  background-color: rgba(241,205,193, .5);
+  box-shadow: 3px  3px  grey;
+  outline: none;
+}
+
+
+.mainNav a:link{
+
+}
+
+.mainNav a:visited{
+	
+}
+
+.mainNav a:hover{
+	background-image: linear-gradient(to top,  white, rgba(255, 216, 205, 1), white);
+    border-radius: 5px 25px 5px 25px;
+}
+
+.mainNav a:active{
+
+}
+
+
+
+main{
+	
+    padding: 10px 25px;
+	margin: 0 auto;
+	width:60%;
+	background-color: rgb(255,221,222);
+}
+
+
+
+main h1{
+	margin: 15px 0;
+	font-weight: bold;
+	font-size: 2.7em;
+	text-align: center;
+	/*letter-spacing: 0.1em;*/
+    overflow: hidden;
+    clear: both;
+}
+
+main h2{
+	border-top: 2px solid grey;
+	margin: 20px 0;
+	font-weight: bold;
+	font-size: 2.7em;
+	text-align: center;
+	/*letter-spacing: 0.1em;*/
+    overflow: hidden;
+}
+
+
+
+
+main p{
+	font-size: 1.8em;
+	margin: 15px 0;
+}
+
+figure{
+  overflow: hidden;
+  margin-bottom: 15px;
+  border: 1px solid rgb(255,153,219);
+  border-radius: 5px;
+  box-shadow: 3px 3px 4px rgba(0,0,0,.5);
+
+}
+figure figcaption{
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+figure img{
+	width: 100%;
+	height: auto;
+
+}
+
+#home{
+    background-image: url(images/bg12.jpg);
+    background-position: left top;
+    background-size: 100% auto;    
+    
+}
+
+#myBtn{
+  opacity: 0.7;
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  cursor: pointer;
+  z-index: 99;
+}
+
+#myBtn:hover {
+  opacity: 1;
+}
+
+footer{
+	width: 100%;
+	background-color: rgb(124,125,119);
+    flex-shrink: 0;  /*Помогает реализовать липкий футер*/
+}
+
+
+
+
+footer .social{
+	text-align: center;
+}
+
+footer .social p{
+	font-size: 1.2em;
+	padding: 5px 10px;	
+}
+
+footer .social a{
+	margin: 0 10px;	
+}
+
+.tab_content{
+	display: none;
+	/*height: 100%;*/
+}
+
+
+
+
+/*Стили портфолио*/
+#portfolio{
+	background-image: url(images/bg8.jpg);
+	background-position: top left;
+	/*background-repeat: repeat-y;*/
+    background-size: 100% auto;
+}
+
+#portfolio main{
+    padding: 5px 15px;
+	margin: 0 auto;
+	width:60%;
+	background-color: rgb(255,221,222);
+}
+
+#portfolio main h2, #price main h2, #contacts main h2{
+	clear: left;
+    margin: 5px 0;
+    padding: 5px 5px;
+    font-style: italic;
+    border-top: none;
+	border-bottom: 2px solid grey;
+	width:100%;
+	/*background-color: rgb(255,221,222);*/
+}
+
+#portfolio .row{
+	display: -ms-flexbox;/* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap;/* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+#portfolio .column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+#portfolio .column img{
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/*Стили прайс листа*/
+
+#price{
+    height: 100%;   /*Помогает реализовать липкий футер*/
+    flex: auto;     /*Помогает реализовать липкий футер*/
+    background-image: url(images/bg13.jpg);
+	background-position: top left;
+	background-repeat: repeat-y;
+    background-size: 100% auto;
+    
+}
+
+ 
+
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	font-size: 1.6em;
+}
+
+
+.item{
+	text-align: left;
+	padding: 20px 20px;
+}
+.cost{
+	text-align: right;
+	padding: 20px 20px;
+}
+
+tr:nth-child(even){ 
+	background-color: #FFE7DF;
+}
+
+
+
+/*Стили контактов*/
+
+#contacts{
+	height: 100%;
+	background-image: url(images/bg16.jpg);
+	background-position: top left;
+	/*background-repeat: repeat-y;*/
+    background-size: 100% auto; 
+}
+
+
+
+/*Стили для более узких экранов*/
+
+
+
+@media screen and (max-width: 1300px){
+
+picture {
+  margin-left: 0;
+}
+
+nav {
+  float: right;
+  width: 70%;
+  margin-top: 80px;	
+}
+
+.mainNav li{
+	float: left;
+	margin: 0 3px;
+	text-align: center;
+    width: 145px;
+}
+
+.mainNav a {
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 10px 25px;
+ }
+}
+
+#myBtn{
+  bottom: 84px; 
+  right: 30px;  
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 980px){
+
+main, #portfolio main, #price main, #contacts main{
+	width:65%;
+
+}
+
+
+
+.responsiveMenuIcon img{
+  display: block;
+  float: right;
+  margin: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+nav {
+  display: block;
+  float: none;
+  width: 65%;
+  margin: 0 auto;
+  border-top: none;
+}
+
+.mainNav li{
+	display: none;
+   
+}
+
+.mainNav a {
+  font-size: 11px;      
+  border: 1px solid (255, 216, 203, 1);
+  border-radius: 5px 5px 15px 15px;  
+  background-color: rgba(241,205,193, .7);
+  box-shadow: 3px  3px  grey;
+  
+}
+
+.mainNav a:hover{
+  background-image: linear-gradient(to top,  white, rgba(255, 216, 205, 1), white);
+  border-radius: 15px 15px 15px 15px;
+
+}
+  
+.mainNav.responsive li {
+  display: block;
+  text-align: center;
+  width: 100%;
+  float: left;
+  margin: 5px auto;
+  text-align: center;  
+  }
+
+  #portfolio .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+
+
+
+
+
+
+/*Стили для мобильных устройств*/
+
+@media screen and (max-width: 400px){
+   
+ 
+
+.mainNav a {
+  font-size: 11px;      
+  border: 1px solid (255, 216, 203, 1);
+  border-radius: 5px 5px 5px 5px;  
+  background-color: rgba(241,205,193, .7);
+  box-shadow: 3px  3px  grey;
+  
+}
+
+.mainNav a:hover{
+  background-image: linear-gradient(to top,  white, rgba(255, 216, 205, 1), white);
+  border-radius: 15px 15px 15px 15px;
+
+}
+  
+.mainNav.responsive li {
+  display: block;
+  text-align: center;
+  width: 100%;
+  float: left;
+  margin: 5px auto;
+  text-align: center;  
+  }
+
+main, #portfolio main, #price main,#contacts main{
+  width: 100%;
+  background-color: rgba(255,221,222, .8);
+}
+
+main h1{
+	margin: 5px 0;
+	font-weight: bold;
+	font-size: 2em;
+	text-align: center;
+	/*letter-spacing: 0.1em;*/
+    overflow: hidden;
+    clear: both;
+}
+
+main h2{
+	border-top: 2px solid grey;
+	margin: 10px 0;
+	font-weight: bold;
+	font-size: 2em;
+	text-align: center;
+	/*letter-spacing: 0.1em;*/
+    overflow: hidden;
+}
+
+
+
+
+main p{
+	font-size: 1.6em;
+	margin: 10px 0;
+}
+
+figure{
+  overflow: hidden;
+  margin-bottom: 15px;
+  border: 2px solid rgb(255,153,219);
+  border-radius: 8px;
+  box-shadow: 4px 4px 7px rgba(0,0,0,.5);
+
+}
+figure figcaption{
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+
+}
+#myBtn{
+  bottom: 15px; 
+  right: 5px; 
+  /*z-index: 99;*/
+}
+
+
+#portfolio .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+
+  
+  #price table{
+  	font-size: 1.3em;
+
+  }
+
+#price .item {
+	padding: 5px;
+}
+
+}
